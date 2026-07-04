@@ -183,7 +183,7 @@ html_content = """<!DOCTYPE html>
             <div class="hero__visual">
                 <div class="hero__glow"></div>
                 <!-- Featured Product: Stylo 160 or Vario 160 -->
-                <img src="Foto Produk/ALL NEW STYLO CBS 160/WhatsApp Image 2026-07-03 at 16.48.19.jpeg" alt="Honda Stylo 160 Showcase" class="hero__img" onerror="this.src='Foto Produk/ALL NEW STYLO ABS 160/WhatsApp Image 2026-07-03 at 16.48.20.jpeg';">
+                <img src="Foto Produk/ALL NEW STYLO CBS/WhatsApp Image 2026-07-02 at 11.09.38.jpeg" alt="Honda Stylo 160 Showcase" class="hero__img" onerror="this.src='Foto Produk/ALL NEW STYLO ABS/WhatsApp Image 2026-07-02 at 11.10.51.jpeg';">
                 <div class="hero__badge">
                     <span class="hero__badge-label">Model Unggulan</span>
                     <span class="hero__badge-name">All New Stylo 160</span>

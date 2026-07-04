@@ -1,8 +1,755 @@
 // CONFIGURASI WHATSAPP
-const WHATSAPP_NUMBER = "6283163895963"; // Nomor WhatsApp marketing/dealer (tanpa simbol + atau spasi)
+const WHATSAPP_NUMBER = "wa.me/6283163895963"; // Nomor WhatsApp marketing/dealer (tanpa simbol + atau spasi)
 
 // DATABASE PRODUK DARI EXCEL (DINAMIS DARI BUILDER)
 const PRODUCTS_DATA = [
+  {
+    "id": "all-beat-cbs",
+    "name": "Beat CBS",
+    "folder": "ALL BEAT CBS",
+    "category": "Beat Series",
+    "otr_price": 19675000.0,
+    "images": [
+      "WhatsApp Image 2026-07-02 at 10.43.05.jpeg",
+      "WhatsApp Image 2026-07-02 at 10.43.06 (1).jpeg",
+      "WhatsApp Image 2026-07-02 at 10.43.06.jpeg"
+    ],
+    "installments": [
+      {
+        "dp": 2000000,
+        "rates": {
+          "11": 2103000,
+          "17": 1486000,
+          "23": 1179000,
+          "29": 1008000,
+          "35": 885000
+        }
+      },
+      {
+        "dp": 2500000,
+        "rates": {
+          "11": 2063000,
+          "17": 1467000,
+          "23": 1149000,
+          "29": 982000,
+          "35": 863000
+        }
+      },
+      {
+        "dp": 3000000,
+        "rates": {
+          "11": 2007000,
+          "17": 1427000,
+          "23": 1137000,
+          "29": 976000,
+          "35": 840000
+        }
+      },
+      {
+        "dp": 3500000,
+        "rates": {
+          "11": 1960000,
+          "17": 1397000,
+          "23": 1106000,
+          "29": 950000,
+          "35": 837000
+        }
+      },
+      {
+        "dp": 4000000,
+        "rates": {
+          "11": 1904000,
+          "17": 1358000,
+          "23": 1084000,
+          "29": 933000,
+          "35": 824000
+        }
+      },
+      {
+        "dp": 4500000,
+        "rates": {
+          "11": 1856000,
+          "17": 1327000,
+          "23": 1053000,
+          "29": 907000,
+          "35": 801000
+        }
+      },
+      {
+        "dp": 5000000,
+        "rates": {
+          "11": 1800000,
+          "17": 1287000,
+          "23": 1030000,
+          "29": 889000,
+          "35": 787000
+        }
+      },
+      {
+        "dp": 5500000,
+        "rates": {
+          "11": 1751000,
+          "17": 1255000,
+          "23": 999000,
+          "29": 862000,
+          "35": 764000
+        }
+      },
+      {
+        "dp": 6000000,
+        "rates": {
+          "11": 1695000,
+          "17": 1215000,
+          "23": 976000,
+          "29": 844000,
+          "35": 749000
+        }
+      },
+      {
+        "dp": 6500000,
+        "rates": {
+          "11": 1646000,
+          "17": 1183000,
+          "23": 944000,
+          "29": 817000,
+          "35": 725000
+        }
+      },
+      {
+        "dp": 7000000,
+        "rates": {
+          "11": 1589000,
+          "17": 1143000,
+          "23": 920000,
+          "29": 798000,
+          "35": 710000
+        }
+      },
+      {
+        "dp": 7500000,
+        "rates": {
+          "11": 1532000,
+          "17": 1102000,
+          "23": 888000,
+          "29": 771000,
+          "35": 686000
+        }
+      },
+      {
+        "dp": 8000000,
+        "rates": {
+          "11": 1475000,
+          "17": 1062000,
+          "23": 856000,
+          "29": 743000,
+          "35": 662000
+        }
+      },
+      {
+        "dp": 8500000,
+        "rates": {
+          "11": 1418000,
+          "17": 1022000,
+          "23": 824000,
+          "29": 716000,
+          "35": 638000
+        }
+      },
+      {
+        "dp": 9000000,
+        "rates": {
+          "11": 1362000,
+          "17": 982000,
+          "23": 792000,
+          "29": 688000,
+          "35": 613000
+        }
+      },
+      {
+        "dp": 9500000,
+        "rates": {
+          "11": 1305000,
+          "17": 941000,
+          "23": 760000,
+          "29": 661000,
+          "35": 589000
+        }
+      },
+      {
+        "dp": 10000000,
+        "rates": {
+          "11": 1248000,
+          "17": 901000,
+          "23": 728000,
+          "29": 633000,
+          "35": 565000
+        }
+      },
+      {
+        "dp": 10500000,
+        "rates": {
+          "11": 1191000,
+          "17": 861000,
+          "23": 696000,
+          "29": 606000,
+          "35": 541000
+        }
+      },
+      {
+        "dp": 11000000,
+        "rates": {
+          "11": 1134000,
+          "17": 820000,
+          "23": 664000,
+          "29": 579000,
+          "35": 517000
+        }
+      },
+      {
+        "dp": 11500000,
+        "rates": {
+          "11": 1078000,
+          "17": 780000,
+          "23": 632000,
+          "29": 551000,
+          "35": 493000
+        }
+      },
+      {
+        "dp": 12000000,
+        "rates": {
+          "11": 1021000,
+          "17": 740000,
+          "23": 600000,
+          "29": 524000,
+          "35": 469000
+        }
+      },
+      {
+        "dp": 12500000,
+        "rates": {
+          "11": 964000,
+          "17": 699000,
+          "23": 568000,
+          "29": 496000,
+          "35": 445000
+        }
+      }
+    ],
+    "variants": [
+      {
+        "colorName": "Funk Red Black",
+        "hex": "#cc1d24",
+        "image": "WhatsApp Image 2026-07-02 at 10.43.05.jpeg"
+      },
+      {
+        "colorName": "Hard Rock Black",
+        "hex": "#1a1a1a",
+        "image": "WhatsApp Image 2026-07-02 at 10.43.06 (1).jpeg"
+      },
+      {
+        "colorName": "Dance White",
+        "hex": "#ffffff",
+        "image": "WhatsApp Image 2026-07-02 at 10.43.06.jpeg"
+      }
+    ]
+  },
+  {
+    "id": "all-beat-iss",
+    "name": "Beat ISS",
+    "folder": "ALL BEAT ISS",
+    "category": "Beat Series",
+    "otr_price": 20725000.0,
+    "images": [
+      "WhatsApp Image 2026-07-02 at 10.45.14 (1).jpeg",
+      "WhatsApp Image 2026-07-02 at 10.45.14.jpeg"
+    ],
+    "installments": [
+      {
+        "dp": 2100000,
+        "rates": {
+          "11": 2211000,
+          "17": 1562000,
+          "23": 1239000,
+          "29": 1060000,
+          "35": 936000
+        }
+      },
+      {
+        "dp": 2600000,
+        "rates": {
+          "11": 2171000,
+          "17": 1544000,
+          "23": 1209000,
+          "29": 1034000,
+          "35": 913000
+        }
+      },
+      {
+        "dp": 3200000,
+        "rates": {
+          "11": 2104000,
+          "17": 1497000,
+          "23": 1192000,
+          "29": 1024000,
+          "35": 902000
+        }
+      },
+      {
+        "dp": 3500000,
+        "rates": {
+          "11": 2080000,
+          "17": 1473000,
+          "23": 1173000,
+          "29": 1008000,
+          "35": 889000
+        }
+      },
+      {
+        "dp": 4000000,
+        "rates": {
+          "11": 2024000,
+          "17": 1443000,
+          "23": 1152000,
+          "29": 992000,
+          "35": 866000
+        }
+      },
+      {
+        "dp": 4500000,
+        "rates": {
+          "11": 1977000,
+          "17": 1404000,
+          "23": 1121000,
+          "29": 966000,
+          "35": 853000
+        }
+      },
+      {
+        "dp": 5000000,
+        "rates": {
+          "11": 1921000,
+          "17": 1373000,
+          "23": 1099000,
+          "29": 939000,
+          "35": 830000
+        }
+      },
+      {
+        "dp": 5500000,
+        "rates": {
+          "11": 1873000,
+          "17": 1334000,
+          "23": 1068000,
+          "29": 922000,
+          "35": 816000
+        }
+      },
+      {
+        "dp": 6000000,
+        "rates": {
+          "11": 1816000,
+          "17": 1302000,
+          "23": 1045000,
+          "29": 895000,
+          "35": 793000
+        }
+      },
+      {
+        "dp": 6500000,
+        "rates": {
+          "11": 1760000,
+          "17": 1262000,
+          "23": 1013000,
+          "29": 877000,
+          "35": 778000
+        }
+      },
+      {
+        "dp": 7000000,
+        "rates": {
+          "11": 1711000,
+          "17": 1230000,
+          "23": 990000,
+          "29": 850000,
+          "35": 755000
+        }
+      },
+      {
+        "dp": 7500000,
+        "rates": {
+          "11": 1654000,
+          "17": 1190000,
+          "23": 958000,
+          "29": 831000,
+          "35": 740000
+        }
+      },
+      {
+        "dp": 8000000,
+        "rates": {
+          "11": 1597000,
+          "17": 1150000,
+          "23": 926000,
+          "29": 804000,
+          "35": 715000
+        }
+      },
+      {
+        "dp": 8500000,
+        "rates": {
+          "11": 1541000,
+          "17": 1109000,
+          "23": 894000,
+          "29": 776000,
+          "35": 691000
+        }
+      },
+      {
+        "dp": 9000000,
+        "rates": {
+          "11": 1484000,
+          "17": 1069000,
+          "23": 862000,
+          "29": 749000,
+          "35": 667000
+        }
+      },
+      {
+        "dp": 9500000,
+        "rates": {
+          "11": 1427000,
+          "17": 1029000,
+          "23": 830000,
+          "29": 721000,
+          "35": 643000
+        }
+      },
+      {
+        "dp": 10000000,
+        "rates": {
+          "11": 1370000,
+          "17": 988000,
+          "23": 798000,
+          "29": 694000,
+          "35": 619000
+        }
+      },
+      {
+        "dp": 10500000,
+        "rates": {
+          "11": 1313000,
+          "17": 948000,
+          "23": 766000,
+          "29": 667000,
+          "35": 595000
+        }
+      },
+      {
+        "dp": 11000000,
+        "rates": {
+          "11": 1256000,
+          "17": 908000,
+          "23": 734000,
+          "29": 639000,
+          "35": 571000
+        }
+      },
+      {
+        "dp": 11500000,
+        "rates": {
+          "11": 1200000,
+          "17": 867000,
+          "23": 702000,
+          "29": 612000,
+          "35": 546000
+        }
+      },
+      {
+        "dp": 12000000,
+        "rates": {
+          "11": 1143000,
+          "17": 827000,
+          "23": 670000,
+          "29": 584000,
+          "35": 522000
+        }
+      },
+      {
+        "dp": 12500000,
+        "rates": {
+          "11": 1086000,
+          "17": 787000,
+          "23": 638000,
+          "29": 557000,
+          "35": 498000
+        }
+      }
+    ],
+    "variants": [
+      {
+        "colorName": "Funk Red Black",
+        "hex": "#cc1d24",
+        "image": "WhatsApp Image 2026-07-02 at 10.45.14 (1).jpeg"
+      },
+      {
+        "colorName": "Hard Rock Black",
+        "hex": "#1a1a1a",
+        "image": "WhatsApp Image 2026-07-02 at 10.45.14.jpeg"
+      }
+    ]
+  },
+  {
+    "id": "all-beat-street",
+    "name": "Beat Street",
+    "folder": "ALL BEAT STREET",
+    "category": "Beat Series",
+    "otr_price": 20850000.0,
+    "images": [
+      "WhatsApp Image 2026-07-02 at 10.48.15.jpeg",
+      "WhatsApp Image 2026-07-02 at 10.48.16 (1).jpeg",
+      "WhatsApp Image 2026-07-02 at 10.48.16.jpeg"
+    ],
+    "installments": [
+      {
+        "dp": 2100000,
+        "rates": {
+          "11": 2225000,
+          "17": 1572000,
+          "23": 1247000,
+          "29": 1067000,
+          "35": 942000
+        }
+      },
+      {
+        "dp": 2700000,
+        "rates": {
+          "11": 2174000,
+          "17": 1546000,
+          "23": 1210000,
+          "29": 1045000,
+          "35": 915000
+        }
+      },
+      {
+        "dp": 3200000,
+        "rates": {
+          "11": 2119000,
+          "17": 1507000,
+          "23": 1200000,
+          "29": 1031000,
+          "35": 908000
+        }
+      },
+      {
+        "dp": 3500000,
+        "rates": {
+          "11": 2095000,
+          "17": 1483000,
+          "23": 1182000,
+          "29": 1015000,
+          "35": 895000
+        }
+      },
+      {
+        "dp": 4000000,
+        "rates": {
+          "11": 2039000,
+          "17": 1454000,
+          "23": 1160000,
+          "29": 989000,
+          "35": 872000
+        }
+      },
+      {
+        "dp": 4500000,
+        "rates": {
+          "11": 1992000,
+          "17": 1414000,
+          "23": 1129000,
+          "29": 973000,
+          "35": 859000
+        }
+      },
+      {
+        "dp": 5000000,
+        "rates": {
+          "11": 1935000,
+          "17": 1384000,
+          "23": 1108000,
+          "29": 946000,
+          "35": 836000
+        }
+      },
+      {
+        "dp": 5500000,
+        "rates": {
+          "11": 1878000,
+          "17": 1344000,
+          "23": 1076000,
+          "29": 929000,
+          "35": 822000
+        }
+      },
+      {
+        "dp": 6000000,
+        "rates": {
+          "11": 1831000,
+          "17": 1313000,
+          "23": 1053000,
+          "29": 902000,
+          "35": 799000
+        }
+      },
+      {
+        "dp": 6500000,
+        "rates": {
+          "11": 1774000,
+          "17": 1273000,
+          "23": 1022000,
+          "29": 884000,
+          "35": 785000
+        }
+      },
+      {
+        "dp": 7000000,
+        "rates": {
+          "11": 1726000,
+          "17": 1241000,
+          "23": 998000,
+          "29": 857000,
+          "35": 761000
+        }
+      },
+      {
+        "dp": 7500000,
+        "rates": {
+          "11": 1669000,
+          "17": 1200000,
+          "23": 966000,
+          "29": 838000,
+          "35": 746000
+        }
+      },
+      {
+        "dp": 8000000,
+        "rates": {
+          "11": 1612000,
+          "17": 1160000,
+          "23": 934000,
+          "29": 811000,
+          "35": 722000
+        }
+      },
+      {
+        "dp": 8500000,
+        "rates": {
+          "11": 1555000,
+          "17": 1120000,
+          "23": 902000,
+          "29": 784000,
+          "35": 698000
+        }
+      },
+      {
+        "dp": 9000000,
+        "rates": {
+          "11": 1498000,
+          "17": 1079000,
+          "23": 870000,
+          "29": 756000,
+          "35": 673000
+        }
+      },
+      {
+        "dp": 9500000,
+        "rates": {
+          "11": 1441000,
+          "17": 1039000,
+          "23": 838000,
+          "29": 729000,
+          "35": 649000
+        }
+      },
+      {
+        "dp": 10000000,
+        "rates": {
+          "11": 1385000,
+          "17": 999000,
+          "23": 806000,
+          "29": 701000,
+          "35": 625000
+        }
+      },
+      {
+        "dp": 10500000,
+        "rates": {
+          "11": 1328000,
+          "17": 959000,
+          "23": 774000,
+          "29": 674000,
+          "35": 601000
+        }
+      },
+      {
+        "dp": 11000000,
+        "rates": {
+          "11": 1271000,
+          "17": 918000,
+          "23": 742000,
+          "29": 646000,
+          "35": 577000
+        }
+      },
+      {
+        "dp": 11500000,
+        "rates": {
+          "11": 1214000,
+          "17": 878000,
+          "23": 710000,
+          "29": 619000,
+          "35": 553000
+        }
+      },
+      {
+        "dp": 12000000,
+        "rates": {
+          "11": 1157000,
+          "17": 838000,
+          "23": 678000,
+          "29": 591000,
+          "35": 529000
+        }
+      },
+      {
+        "dp": 12500000,
+        "rates": {
+          "11": 1101000,
+          "17": 797000,
+          "23": 646000,
+          "29": 564000,
+          "35": 505000
+        }
+      }
+    ],
+    "variants": [
+      {
+        "colorName": "Street Black",
+        "hex": "#1c1c1c",
+        "image": "WhatsApp Image 2026-07-02 at 10.48.15.jpeg"
+      },
+      {
+        "colorName": "Street Silver",
+        "hex": "#b0bec5",
+        "image": "WhatsApp Image 2026-07-02 at 10.48.16 (1).jpeg"
+      },
+      {
+        "colorName": "Street Matte Blue",
+        "hex": "#1e3d59",
+        "image": "WhatsApp Image 2026-07-02 at 10.48.16.jpeg"
+      }
+    ]
+  },
   {
     "id": "all-new-adv-abs-160",
     "name": "ADV ABS 160",
@@ -1301,8 +2048,9 @@ const PRODUCTS_DATA = [
     "category": "Beat Series",
     "otr_price": 19675000.0,
     "images": [
-      "WhatsApp Image 2026-07-03 at 16.47.44.jpeg",
-      "WhatsApp Image 2026-07-03 at 16.47.46.jpeg"
+      "WhatsApp Image 2026-07-02 at 10.43.31 (1).jpeg",
+      "WhatsApp Image 2026-07-02 at 10.43.31 (2).jpeg",
+      "WhatsApp Image 2026-07-02 at 10.43.31.jpeg"
     ],
     "installments": [
       {
@@ -1530,283 +2278,29 @@ const PRODUCTS_DATA = [
       {
         "colorName": "Funk Red Black",
         "hex": "#cc1d24",
-        "image": "WhatsApp Image 2026-07-03 at 16.47.44.jpeg"
+        "image": "WhatsApp Image 2026-07-02 at 10.43.31 (1).jpeg"
       },
       {
         "colorName": "Hard Rock Black",
         "hex": "#1a1a1a",
-        "image": "WhatsApp Image 2026-07-03 at 16.47.46.jpeg"
-      }
-    ]
-  },
-  {
-    "id": "all-new-beat-cbs-110",
-    "name": "Beat CBS 110",
-    "folder": "ALL NEW BEAT CBS 110",
-    "category": "Beat Series",
-    "otr_price": 19675000.0,
-    "images": [
-      "WhatsApp Image 2026-07-03 at 16.30.07.jpeg",
-      "WhatsApp Image 2026-07-03 at 16.30.18.jpeg",
-      "WhatsApp Image 2026-07-03 at 16.47.42.jpeg",
-      "WhatsApp Image 2026-07-03 at 16.47.43.jpeg"
-    ],
-    "installments": [
-      {
-        "dp": 2000000,
-        "rates": {
-          "11": 2103000,
-          "17": 1486000,
-          "23": 1179000,
-          "29": 1008000,
-          "35": 885000
-        }
-      },
-      {
-        "dp": 2500000,
-        "rates": {
-          "11": 2063000,
-          "17": 1467000,
-          "23": 1149000,
-          "29": 982000,
-          "35": 863000
-        }
-      },
-      {
-        "dp": 3000000,
-        "rates": {
-          "11": 2007000,
-          "17": 1427000,
-          "23": 1137000,
-          "29": 976000,
-          "35": 840000
-        }
-      },
-      {
-        "dp": 3500000,
-        "rates": {
-          "11": 1960000,
-          "17": 1397000,
-          "23": 1106000,
-          "29": 950000,
-          "35": 837000
-        }
-      },
-      {
-        "dp": 4000000,
-        "rates": {
-          "11": 1904000,
-          "17": 1358000,
-          "23": 1084000,
-          "29": 933000,
-          "35": 824000
-        }
-      },
-      {
-        "dp": 4500000,
-        "rates": {
-          "11": 1856000,
-          "17": 1327000,
-          "23": 1053000,
-          "29": 907000,
-          "35": 801000
-        }
-      },
-      {
-        "dp": 5000000,
-        "rates": {
-          "11": 1800000,
-          "17": 1287000,
-          "23": 1030000,
-          "29": 889000,
-          "35": 787000
-        }
-      },
-      {
-        "dp": 5500000,
-        "rates": {
-          "11": 1751000,
-          "17": 1255000,
-          "23": 999000,
-          "29": 862000,
-          "35": 764000
-        }
-      },
-      {
-        "dp": 6000000,
-        "rates": {
-          "11": 1695000,
-          "17": 1215000,
-          "23": 976000,
-          "29": 844000,
-          "35": 749000
-        }
-      },
-      {
-        "dp": 6500000,
-        "rates": {
-          "11": 1646000,
-          "17": 1183000,
-          "23": 944000,
-          "29": 817000,
-          "35": 725000
-        }
-      },
-      {
-        "dp": 7000000,
-        "rates": {
-          "11": 1589000,
-          "17": 1143000,
-          "23": 920000,
-          "29": 798000,
-          "35": 710000
-        }
-      },
-      {
-        "dp": 7500000,
-        "rates": {
-          "11": 1532000,
-          "17": 1102000,
-          "23": 888000,
-          "29": 771000,
-          "35": 686000
-        }
-      },
-      {
-        "dp": 8000000,
-        "rates": {
-          "11": 1475000,
-          "17": 1062000,
-          "23": 856000,
-          "29": 743000,
-          "35": 662000
-        }
-      },
-      {
-        "dp": 8500000,
-        "rates": {
-          "11": 1418000,
-          "17": 1022000,
-          "23": 824000,
-          "29": 716000,
-          "35": 638000
-        }
-      },
-      {
-        "dp": 9000000,
-        "rates": {
-          "11": 1362000,
-          "17": 982000,
-          "23": 792000,
-          "29": 688000,
-          "35": 613000
-        }
-      },
-      {
-        "dp": 9500000,
-        "rates": {
-          "11": 1305000,
-          "17": 941000,
-          "23": 760000,
-          "29": 661000,
-          "35": 589000
-        }
-      },
-      {
-        "dp": 10000000,
-        "rates": {
-          "11": 1248000,
-          "17": 901000,
-          "23": 728000,
-          "29": 633000,
-          "35": 565000
-        }
-      },
-      {
-        "dp": 10500000,
-        "rates": {
-          "11": 1191000,
-          "17": 861000,
-          "23": 696000,
-          "29": 606000,
-          "35": 541000
-        }
-      },
-      {
-        "dp": 11000000,
-        "rates": {
-          "11": 1134000,
-          "17": 820000,
-          "23": 664000,
-          "29": 579000,
-          "35": 517000
-        }
-      },
-      {
-        "dp": 11500000,
-        "rates": {
-          "11": 1078000,
-          "17": 780000,
-          "23": 632000,
-          "29": 551000,
-          "35": 493000
-        }
-      },
-      {
-        "dp": 12000000,
-        "rates": {
-          "11": 1021000,
-          "17": 740000,
-          "23": 600000,
-          "29": 524000,
-          "35": 469000
-        }
-      },
-      {
-        "dp": 12500000,
-        "rates": {
-          "11": 964000,
-          "17": 699000,
-          "23": 568000,
-          "29": 496000,
-          "35": 445000
-        }
-      }
-    ],
-    "variants": [
-      {
-        "colorName": "Funk Red Black",
-        "hex": "#cc1d24",
-        "image": "WhatsApp Image 2026-07-03 at 16.30.07.jpeg"
-      },
-      {
-        "colorName": "Hard Rock Black",
-        "hex": "#1a1a1a",
-        "image": "WhatsApp Image 2026-07-03 at 16.30.18.jpeg"
+        "image": "WhatsApp Image 2026-07-02 at 10.43.31 (2).jpeg"
       },
       {
         "colorName": "Dance White",
         "hex": "#ffffff",
-        "image": "WhatsApp Image 2026-07-03 at 16.47.42.jpeg"
-      },
-      {
-        "colorName": "Garage Matte Black",
-        "hex": "#2d2d2d",
-        "image": "WhatsApp Image 2026-07-03 at 16.47.43.jpeg"
+        "image": "WhatsApp Image 2026-07-02 at 10.43.31.jpeg"
       }
     ]
   },
   {
-    "id": "all-new-beat-cbs-iss",
-    "name": "Beat CBS ISS",
-    "folder": "ALL NEW BEAT CBS ISS",
+    "id": "all-new-beat-iss",
+    "name": "Beat ISS",
+    "folder": "ALL NEW BEAT ISS",
     "category": "Beat Series",
     "otr_price": 20725000.0,
     "images": [
-      "WhatsApp Image 2026-07-03 at 16.47.47.jpeg",
-      "WhatsApp Image 2026-07-03 at 16.47.48.jpeg",
-      "WhatsApp Image 2026-07-03 at 16.47.49.jpeg",
-      "WhatsApp Image 2026-07-03 at 16.47.50.jpeg"
+      "WhatsApp Image 2026-07-02 at 10.45.38 (1).jpeg",
+      "WhatsApp Image 2026-07-02 at 10.45.38.jpeg"
     ],
     "installments": [
       {
@@ -2034,22 +2528,12 @@ const PRODUCTS_DATA = [
       {
         "colorName": "Funk Red Black",
         "hex": "#cc1d24",
-        "image": "WhatsApp Image 2026-07-03 at 16.47.47.jpeg"
+        "image": "WhatsApp Image 2026-07-02 at 10.45.38 (1).jpeg"
       },
       {
         "colorName": "Hard Rock Black",
         "hex": "#1a1a1a",
-        "image": "WhatsApp Image 2026-07-03 at 16.47.48.jpeg"
-      },
-      {
-        "colorName": "Dance White",
-        "hex": "#ffffff",
-        "image": "WhatsApp Image 2026-07-03 at 16.47.49.jpeg"
-      },
-      {
-        "colorName": "Garage Matte Black",
-        "hex": "#2d2d2d",
-        "image": "WhatsApp Image 2026-07-03 at 16.47.50.jpeg"
+        "image": "WhatsApp Image 2026-07-02 at 10.45.38.jpeg"
       }
     ]
   },
@@ -2060,9 +2544,9 @@ const PRODUCTS_DATA = [
     "category": "Beat Series",
     "otr_price": 21300000.0,
     "images": [
-      "WhatsApp Image 2026-07-03 at 16.47.58 (1).jpeg",
-      "WhatsApp Image 2026-07-03 at 16.47.58 (2).jpeg",
-      "WhatsApp Image 2026-07-03 at 16.47.58.jpeg"
+      "WhatsApp Image 2026-07-02 at 10.46.32 (1).jpeg",
+      "WhatsApp Image 2026-07-02 at 10.46.32.jpeg",
+      "WhatsApp Image 2026-07-02 at 10.46.33.jpeg"
     ],
     "installments": [
       {
@@ -2290,17 +2774,17 @@ const PRODUCTS_DATA = [
       {
         "colorName": "Funk Red Black",
         "hex": "#cc1d24",
-        "image": "WhatsApp Image 2026-07-03 at 16.47.58 (1).jpeg"
+        "image": "WhatsApp Image 2026-07-02 at 10.46.32 (1).jpeg"
       },
       {
         "colorName": "Hard Rock Black",
         "hex": "#1a1a1a",
-        "image": "WhatsApp Image 2026-07-03 at 16.47.58 (2).jpeg"
+        "image": "WhatsApp Image 2026-07-02 at 10.46.32.jpeg"
       },
       {
         "colorName": "Dance White",
         "hex": "#ffffff",
-        "image": "WhatsApp Image 2026-07-03 at 16.47.58.jpeg"
+        "image": "WhatsApp Image 2026-07-02 at 10.46.33.jpeg"
       }
     ]
   },
@@ -2311,12 +2795,9 @@ const PRODUCTS_DATA = [
     "category": "Beat Series",
     "otr_price": 20850000.0,
     "images": [
-      "WhatsApp Image 2026-07-03 at 16.47.51.jpeg",
-      "WhatsApp Image 2026-07-03 at 16.47.52.jpeg",
-      "WhatsApp Image 2026-07-03 at 16.47.53.jpeg",
-      "WhatsApp Image 2026-07-03 at 16.48.01 (1).jpeg",
-      "WhatsApp Image 2026-07-03 at 16.48.01.jpeg",
-      "WhatsApp Image 2026-07-03 at 16.48.02.jpeg"
+      "WhatsApp Image 2026-07-02 at 10.48.43 (1).jpeg",
+      "WhatsApp Image 2026-07-02 at 10.48.43 (2).jpeg",
+      "WhatsApp Image 2026-07-02 at 10.48.43.jpeg"
     ],
     "installments": [
       {
@@ -2544,32 +3025,17 @@ const PRODUCTS_DATA = [
       {
         "colorName": "Street Black",
         "hex": "#1c1c1c",
-        "image": "WhatsApp Image 2026-07-03 at 16.47.51.jpeg"
+        "image": "WhatsApp Image 2026-07-02 at 10.48.43 (1).jpeg"
       },
       {
         "colorName": "Street Silver",
         "hex": "#b0bec5",
-        "image": "WhatsApp Image 2026-07-03 at 16.47.52.jpeg"
+        "image": "WhatsApp Image 2026-07-02 at 10.48.43 (2).jpeg"
       },
       {
         "colorName": "Street Matte Blue",
         "hex": "#1e3d59",
-        "image": "WhatsApp Image 2026-07-03 at 16.47.53.jpeg"
-      },
-      {
-        "colorName": "Street Matte Gray",
-        "hex": "#5e6e7a",
-        "image": "WhatsApp Image 2026-07-03 at 16.48.01 (1).jpeg"
-      },
-      {
-        "colorName": "Street Matte Red",
-        "hex": "#9e2a2b",
-        "image": "WhatsApp Image 2026-07-03 at 16.48.01.jpeg"
-      },
-      {
-        "colorName": "Street Matte Yellow",
-        "hex": "#ffd54f",
-        "image": "WhatsApp Image 2026-07-03 at 16.48.02.jpeg"
+        "image": "WhatsApp Image 2026-07-02 at 10.48.43.jpeg"
       }
     ]
   },
@@ -5866,8 +6332,7 @@ const PRODUCTS_DATA = [
     "category": "Genio Series",
     "otr_price": 21150000.0,
     "images": [
-      "WhatsApp Image 2026-07-03 at 16.48.04 (1).jpeg",
-      "WhatsApp Image 2026-07-03 at 16.48.05.jpeg"
+      "WhatsApp Image 2026-07-02 at 10.52.19.jpeg"
     ],
     "installments": [
       {
@@ -6095,12 +6560,7 @@ const PRODUCTS_DATA = [
       {
         "colorName": "Radiant Red Black",
         "hex": "#cc1d24",
-        "image": "WhatsApp Image 2026-07-03 at 16.48.04 (1).jpeg"
-      },
-      {
-        "colorName": "Radiant Black",
-        "hex": "#1a1a1a",
-        "image": "WhatsApp Image 2026-07-03 at 16.48.05.jpeg"
+        "image": "WhatsApp Image 2026-07-02 at 10.52.19.jpeg"
       }
     ]
   },
@@ -6111,8 +6571,9 @@ const PRODUCTS_DATA = [
     "category": "Genio Series",
     "otr_price": 21575000.0,
     "images": [
-      "WhatsApp Image 2026-07-03 at 16.48.02 (1).jpeg",
-      "WhatsApp Image 2026-07-03 at 16.48.03.jpeg"
+      "WhatsApp Image 2026-07-02 at 10.49.57 (1).jpeg",
+      "WhatsApp Image 2026-07-02 at 10.49.57.jpeg",
+      "WhatsApp Image 2026-07-02 at 10.49.58.jpeg"
     ],
     "installments": [
       {
@@ -6370,12 +6831,17 @@ const PRODUCTS_DATA = [
       {
         "colorName": "Radiant Red Black",
         "hex": "#cc1d24",
-        "image": "WhatsApp Image 2026-07-03 at 16.48.02 (1).jpeg"
+        "image": "WhatsApp Image 2026-07-02 at 10.49.57 (1).jpeg"
       },
       {
         "colorName": "Radiant Black",
         "hex": "#1a1a1a",
-        "image": "WhatsApp Image 2026-07-03 at 16.48.03.jpeg"
+        "image": "WhatsApp Image 2026-07-02 at 10.49.57.jpeg"
+      },
+      {
+        "colorName": "Fabulous Matte Black",
+        "hex": "#262626",
+        "image": "WhatsApp Image 2026-07-02 at 10.49.58.jpeg"
       }
     ]
   },
@@ -6386,8 +6852,8 @@ const PRODUCTS_DATA = [
     "category": "Genio Series",
     "otr_price": 21150000.0,
     "images": [
-      "WhatsApp Image 2026-07-03 at 16.48.03 (1).jpeg",
-      "WhatsApp Image 2026-07-03 at 16.48.04.jpeg"
+      "WhatsApp Image 2026-07-02 at 10.51.13 (1).jpeg",
+      "WhatsApp Image 2026-07-02 at 10.51.13.jpeg"
     ],
     "installments": [
       {
@@ -6615,12 +7081,12 @@ const PRODUCTS_DATA = [
       {
         "colorName": "Radiant Red Black",
         "hex": "#cc1d24",
-        "image": "WhatsApp Image 2026-07-03 at 16.48.03 (1).jpeg"
+        "image": "WhatsApp Image 2026-07-02 at 10.51.13 (1).jpeg"
       },
       {
         "colorName": "Radiant Black",
         "hex": "#1a1a1a",
-        "image": "WhatsApp Image 2026-07-03 at 16.48.04.jpeg"
+        "image": "WhatsApp Image 2026-07-02 at 10.51.13.jpeg"
       }
     ]
   },
@@ -8100,10 +8566,10 @@ const PRODUCTS_DATA = [
     "category": "Scoopy Series",
     "otr_price": 23975000.0,
     "images": [
-      "WhatsApp Image 2026-07-03 at 16.48.05 (1).jpeg",
-      "WhatsApp Image 2026-07-03 at 16.48.05 (2).jpeg",
-      "WhatsApp Image 2026-07-03 at 16.48.06 (1).jpeg",
-      "WhatsApp Image 2026-07-03 at 16.48.06.jpeg"
+      "WhatsApp Image 2026-07-02 at 10.53.35 (1).jpeg",
+      "WhatsApp Image 2026-07-02 at 10.53.35 (2).jpeg",
+      "WhatsApp Image 2026-07-02 at 10.53.35.jpeg",
+      "WhatsApp Image 2026-07-02 at 10.53.36.jpeg"
     ],
     "installments": [
       {
@@ -8371,38 +8837,35 @@ const PRODUCTS_DATA = [
       {
         "colorName": "Fashion Blue",
         "hex": "#1a73e8",
-        "image": "WhatsApp Image 2026-07-03 at 16.48.05 (1).jpeg"
+        "image": "WhatsApp Image 2026-07-02 at 10.53.35 (1).jpeg"
       },
       {
         "colorName": "Fashion Brown",
         "hex": "#795548",
-        "image": "WhatsApp Image 2026-07-03 at 16.48.05 (2).jpeg"
+        "image": "WhatsApp Image 2026-07-02 at 10.53.35 (2).jpeg"
       },
       {
         "colorName": "Fashion Red",
         "hex": "#d32f2f",
-        "image": "WhatsApp Image 2026-07-03 at 16.48.06 (1).jpeg"
+        "image": "WhatsApp Image 2026-07-02 at 10.53.35.jpeg"
       },
       {
         "colorName": "Fashion Black",
         "hex": "#212121",
-        "image": "WhatsApp Image 2026-07-03 at 16.48.06.jpeg"
+        "image": "WhatsApp Image 2026-07-02 at 10.53.36.jpeg"
       }
     ]
   },
   {
-    "id": "all-new-scoopy-stylish",
-    "name": "Scoopy Stylish",
-    "folder": "ALL NEW SCOOPY STYLISH",
+    "id": "all-new-scoopy-prestige",
+    "name": "Scoopy Prestige",
+    "folder": "ALL NEW SCOOPY PRESTIGE",
     "category": "Scoopy Series",
     "otr_price": 24775000.0,
     "images": [
-      "WhatsApp Image 2026-07-03 at 16.48.07 (1).jpeg",
-      "WhatsApp Image 2026-07-03 at 16.48.07 (2).jpeg",
-      "WhatsApp Image 2026-07-03 at 16.48.07.jpeg",
-      "WhatsApp Image 2026-07-03 at 16.48.08 (1).jpeg",
-      "WhatsApp Image 2026-07-03 at 16.48.08.jpeg",
-      "WhatsApp Image 2026-07-03 at 16.48.09.jpeg"
+      "WhatsApp Image 2026-07-02 at 10.56.44 (1).jpeg",
+      "WhatsApp Image 2026-07-02 at 10.56.44 (2).jpeg",
+      "WhatsApp Image 2026-07-02 at 10.56.44.jpeg"
     ],
     "installments": [
       {
@@ -8670,43 +9133,321 @@ const PRODUCTS_DATA = [
       {
         "colorName": "Fashion Blue",
         "hex": "#1a73e8",
-        "image": "WhatsApp Image 2026-07-03 at 16.48.07 (1).jpeg"
+        "image": "WhatsApp Image 2026-07-02 at 10.56.44 (1).jpeg"
       },
       {
         "colorName": "Fashion Brown",
         "hex": "#795548",
-        "image": "WhatsApp Image 2026-07-03 at 16.48.07 (2).jpeg"
+        "image": "WhatsApp Image 2026-07-02 at 10.56.44 (2).jpeg"
       },
       {
         "colorName": "Fashion Red",
         "hex": "#d32f2f",
-        "image": "WhatsApp Image 2026-07-03 at 16.48.07.jpeg"
-      },
-      {
-        "colorName": "Fashion Black",
-        "hex": "#212121",
-        "image": "WhatsApp Image 2026-07-03 at 16.48.08 (1).jpeg"
-      },
-      {
-        "colorName": "Stylish Red",
-        "hex": "#c2185b",
-        "image": "WhatsApp Image 2026-07-03 at 16.48.08.jpeg"
-      },
-      {
-        "colorName": "Stylish Green",
-        "hex": "#1b5e20",
-        "image": "WhatsApp Image 2026-07-03 at 16.48.09.jpeg"
+        "image": "WhatsApp Image 2026-07-02 at 10.56.44.jpeg"
       }
     ]
   },
   {
-    "id": "all-new-stylo-abs-160",
-    "name": "Stylo ABS 160",
-    "folder": "ALL NEW STYLO ABS 160",
+    "id": "all-new-scoopy-stylish",
+    "name": "Scoopy Stylish",
+    "folder": "ALL NEW SCOOPY STYLISH",
+    "category": "Scoopy Series",
+    "otr_price": 24775000.0,
+    "images": [
+      "WhatsApp Image 2026-07-02 at 10.55.20 (2).jpeg",
+      "WhatsApp Image 2026-07-02 at 10.55.20(1).jpeg",
+      "WhatsApp Image 2026-07-02 at 10.55.20.jpeg"
+    ],
+    "installments": [
+      {
+        "dp": 2500000,
+        "rates": {
+          "11": 2668000,
+          "17": 1888000,
+          "23": 1501000,
+          "29": 1289000,
+          "35": 1137000
+        }
+      },
+      {
+        "dp": 3100000,
+        "rates": {
+          "11": 2613000,
+          "17": 1857000,
+          "23": 1464000,
+          "29": 1265000,
+          "35": 1114000
+        }
+      },
+      {
+        "dp": 3800000,
+        "rates": {
+          "11": 2534000,
+          "17": 1802000,
+          "23": 1441000,
+          "29": 1242000,
+          "35": 1098000
+        }
+      },
+      {
+        "dp": 4000000,
+        "rates": {
+          "11": 2523000,
+          "17": 1786000,
+          "23": 1428000,
+          "29": 1231000,
+          "35": 1089000
+        }
+      },
+      {
+        "dp": 4500000,
+        "rates": {
+          "11": 2466000,
+          "17": 1757000,
+          "23": 1408000,
+          "29": 1205000,
+          "35": 1065000
+        }
+      },
+      {
+        "dp": 5000000,
+        "rates": {
+          "11": 2409000,
+          "17": 1717000,
+          "23": 1377000,
+          "29": 1190000,
+          "35": 1055000
+        }
+      },
+      {
+        "dp": 5500000,
+        "rates": {
+          "11": 2363000,
+          "17": 1688000,
+          "23": 1345000,
+          "29": 1163000,
+          "35": 1031000
+        }
+      },
+      {
+        "dp": 6000000,
+        "rates": {
+          "11": 2306000,
+          "17": 1648000,
+          "23": 1324000,
+          "29": 1147000,
+          "35": 1007000
+        }
+      },
+      {
+        "dp": 6500000,
+        "rates": {
+          "11": 2259000,
+          "17": 1608000,
+          "23": 1292000,
+          "29": 1120000,
+          "35": 995000
+        }
+      },
+      {
+        "dp": 7000000,
+        "rates": {
+          "11": 2201000,
+          "17": 1578000,
+          "23": 1271000,
+          "29": 1092000,
+          "35": 971000
+        }
+      },
+      {
+        "dp": 7500000,
+        "rates": {
+          "11": 2144000,
+          "17": 1537000,
+          "23": 1239000,
+          "29": 1076000,
+          "35": 958000
+        }
+      },
+      {
+        "dp": 8000000,
+        "rates": {
+          "11": 2096000,
+          "17": 1506000,
+          "23": 1207000,
+          "29": 1048000,
+          "35": 934000
+        }
+      },
+      {
+        "dp": 8500000,
+        "rates": {
+          "11": 2039000,
+          "17": 1465000,
+          "23": 1184000,
+          "29": 1031000,
+          "35": 909000
+        }
+      },
+      {
+        "dp": 9000000,
+        "rates": {
+          "11": 1981000,
+          "17": 1425000,
+          "23": 1152000,
+          "29": 1003000,
+          "35": 843000
+        }
+      },
+      {
+        "dp": 9500000,
+        "rates": {
+          "11": 1923000,
+          "17": 1384000,
+          "23": 1119000,
+          "29": 975000,
+          "35": 820000
+        }
+      },
+      {
+        "dp": 10000000,
+        "rates": {
+          "11": 1866000,
+          "17": 1343000,
+          "23": 1086000,
+          "29": 947000,
+          "35": 797000
+        }
+      },
+      {
+        "dp": 10500000,
+        "rates": {
+          "11": 1808000,
+          "17": 1302000,
+          "23": 1054000,
+          "29": 919000,
+          "35": 773000
+        }
+      },
+      {
+        "dp": 11000000,
+        "rates": {
+          "11": 1751000,
+          "17": 1261000,
+          "23": 1021000,
+          "29": 891000,
+          "35": 750000
+        }
+      },
+      {
+        "dp": 11500000,
+        "rates": {
+          "11": 1693000,
+          "17": 1220000,
+          "23": 989000,
+          "29": 863000,
+          "35": 727000
+        }
+      },
+      {
+        "dp": 12000000,
+        "rates": {
+          "11": 1635000,
+          "17": 1180000,
+          "23": 956000,
+          "29": 835000,
+          "35": 704000
+        }
+      },
+      {
+        "dp": 12500000,
+        "rates": {
+          "11": 1578000,
+          "17": 1139000,
+          "23": 924000,
+          "29": 807000,
+          "35": 680000
+        }
+      },
+      {
+        "dp": 13000000,
+        "rates": {
+          "11": 1520000,
+          "17": 1098000,
+          "23": 891000,
+          "29": 779000,
+          "35": 657000
+        }
+      },
+      {
+        "dp": 13500000,
+        "rates": {
+          "11": 1463000,
+          "17": 1057000,
+          "23": 859000,
+          "29": 751000,
+          "35": 634000
+        }
+      },
+      {
+        "dp": 14000000,
+        "rates": {
+          "11": 1405000,
+          "17": 1016000,
+          "23": 826000,
+          "29": 723000,
+          "35": 610000
+        }
+      },
+      {
+        "dp": 14500000,
+        "rates": {
+          "11": 1348000,
+          "17": 975000,
+          "23": 793000,
+          "29": 695000,
+          "35": 587000
+        }
+      },
+      {
+        "dp": 15000000,
+        "rates": {
+          "11": 1290000,
+          "17": 935000,
+          "23": 761000,
+          "29": 667000,
+          "35": 564000
+        }
+      }
+    ],
+    "variants": [
+      {
+        "colorName": "Fashion Blue",
+        "hex": "#1a73e8",
+        "image": "WhatsApp Image 2026-07-02 at 10.55.20 (2).jpeg"
+      },
+      {
+        "colorName": "Fashion Brown",
+        "hex": "#795548",
+        "image": "WhatsApp Image 2026-07-02 at 10.55.20(1).jpeg"
+      },
+      {
+        "colorName": "Fashion Red",
+        "hex": "#d32f2f",
+        "image": "WhatsApp Image 2026-07-02 at 10.55.20.jpeg"
+      }
+    ]
+  },
+  {
+    "id": "all-new-stylo-abs",
+    "name": "Stylo ABS",
+    "folder": "ALL NEW STYLO ABS",
     "category": "Stylo Series",
     "otr_price": 33025000.0,
     "images": [
-      "WhatsApp Image 2026-07-03 at 16.48.20.jpeg"
+      "WhatsApp Image 2026-07-02 at 11.10.51 (1).jpeg",
+      "WhatsApp Image 2026-07-02 at 11.10.51.jpeg",
+      "WhatsApp Image 2026-07-02 at 11.10.52.jpeg"
     ],
     "installments": [
       {
@@ -9044,19 +9785,369 @@ const PRODUCTS_DATA = [
       {
         "colorName": "Royal Matte Black",
         "hex": "#1f1f1f",
-        "image": "WhatsApp Image 2026-07-03 at 16.48.20.jpeg"
+        "image": "WhatsApp Image 2026-07-02 at 11.10.51 (1).jpeg"
+      },
+      {
+        "colorName": "Glam Beige",
+        "hex": "#d7ccc8",
+        "image": "WhatsApp Image 2026-07-02 at 11.10.51.jpeg"
+      },
+      {
+        "colorName": "Royal Matte White",
+        "hex": "#eceff1",
+        "image": "WhatsApp Image 2026-07-02 at 11.10.52.jpeg"
       }
     ]
   },
   {
-    "id": "all-new-stylo-cbs-160",
-    "name": "Stylo CBS 160",
-    "folder": "ALL NEW STYLO CBS 160",
+    "id": "all-new-stylo-abs-se",
+    "name": "Stylo ABS SE",
+    "folder": "ALL NEW STYLO ABS SE",
+    "category": "Stylo Series",
+    "otr_price": 34800000.0,
+    "images": [
+      "WhatsApp Image 2026-07-02 at 11.11.37.jpeg"
+    ],
+    "installments": [
+      {
+        "dp": 3500000,
+        "rates": {
+          "11": 3688000,
+          "17": 2601000,
+          "23": 2066000,
+          "29": 1770000,
+          "35": 1538000
+        }
+      },
+      {
+        "dp": 4500000,
+        "rates": {
+          "11": 3576000,
+          "17": 2523000,
+          "23": 2004000,
+          "29": 1718000,
+          "35": 1493000
+        }
+      },
+      {
+        "dp": 5300000,
+        "rates": {
+          "11": 3493000,
+          "17": 2460000,
+          "23": 1955000,
+          "29": 1677000,
+          "35": 1457000
+        }
+      },
+      {
+        "dp": 6000000,
+        "rates": {
+          "11": 3414000,
+          "17": 2418000,
+          "23": 1927000,
+          "29": 1640000,
+          "35": 1426000
+        }
+      },
+      {
+        "dp": 6500000,
+        "rates": {
+          "11": 3358000,
+          "17": 2379000,
+          "23": 1896000,
+          "29": 1629000,
+          "35": 1419000
+        }
+      },
+      {
+        "dp": 7000000,
+        "rates": {
+          "11": 3317000,
+          "17": 2340000,
+          "23": 1865000,
+          "29": 1603000,
+          "35": 1396000
+        }
+      },
+      {
+        "dp": 7500000,
+        "rates": {
+          "11": 3261000,
+          "17": 2316000,
+          "23": 1834000,
+          "29": 1577000,
+          "35": 1373000
+        }
+      },
+      {
+        "dp": 8000000,
+        "rates": {
+          "11": 3205000,
+          "17": 2276000,
+          "23": 1818000,
+          "29": 1567000,
+          "35": 1351000
+        }
+      },
+      {
+        "dp": 8500000,
+        "rates": {
+          "11": 3148000,
+          "17": 2237000,
+          "23": 1787000,
+          "29": 1540000,
+          "35": 1344000
+        }
+      },
+      {
+        "dp": 9000000,
+        "rates": {
+          "11": 3106000,
+          "17": 2212000,
+          "23": 1756000,
+          "29": 1513000,
+          "35": 1321000
+        }
+      },
+      {
+        "dp": 9500000,
+        "rates": {
+          "11": 3049000,
+          "17": 2172000,
+          "23": 1740000,
+          "29": 1487000,
+          "35": 1298000
+        }
+      },
+      {
+        "dp": 10000000,
+        "rates": {
+          "11": 2993000,
+          "17": 2132000,
+          "23": 1708000,
+          "29": 1475000,
+          "35": 1291000
+        }
+      },
+      {
+        "dp": 10500000,
+        "rates": {
+          "11": 2949000,
+          "17": 2092000,
+          "23": 1677000,
+          "29": 1448000,
+          "35": 1268000
+        }
+      },
+      {
+        "dp": 11000000,
+        "rates": {
+          "11": 2893000,
+          "17": 2066000,
+          "23": 1645000,
+          "29": 1422000,
+          "35": 1245000
+        }
+      },
+      {
+        "dp": 11500000,
+        "rates": {
+          "11": 2836000,
+          "17": 2026000,
+          "23": 1628000,
+          "29": 1409000,
+          "35": 1221000
+        }
+      },
+      {
+        "dp": 12000000,
+        "rates": {
+          "11": 2779000,
+          "17": 1986000,
+          "23": 1596000,
+          "29": 1382000,
+          "35": 1213000
+        }
+      },
+      {
+        "dp": 12500000,
+        "rates": {
+          "11": 2722000,
+          "17": 1946000,
+          "23": 1564000,
+          "29": 1355000,
+          "35": 1189000
+        }
+      },
+      {
+        "dp": 13000000,
+        "rates": {
+          "11": 2665000,
+          "17": 1906000,
+          "23": 1532000,
+          "29": 1328000,
+          "35": 1166000
+        }
+      },
+      {
+        "dp": 13500000,
+        "rates": {
+          "11": 2609000,
+          "17": 1866000,
+          "23": 1501000,
+          "29": 1301000,
+          "35": 1142000
+        }
+      },
+      {
+        "dp": 14000000,
+        "rates": {
+          "11": 2552000,
+          "17": 1826000,
+          "23": 1469000,
+          "29": 1273000,
+          "35": 1118000
+        }
+      },
+      {
+        "dp": 14500000,
+        "rates": {
+          "11": 2495000,
+          "17": 1786000,
+          "23": 1437000,
+          "29": 1246000,
+          "35": 1095000
+        }
+      },
+      {
+        "dp": 15000000,
+        "rates": {
+          "11": 2438000,
+          "17": 1746000,
+          "23": 1405000,
+          "29": 1219000,
+          "35": 1071000
+        }
+      },
+      {
+        "dp": 15500000,
+        "rates": {
+          "11": 2381000,
+          "17": 1706000,
+          "23": 1374000,
+          "29": 1192000,
+          "35": 1048000
+        }
+      },
+      {
+        "dp": 16000000,
+        "rates": {
+          "11": 2324000,
+          "17": 1666000,
+          "23": 1342000,
+          "29": 1165000,
+          "35": 1024000
+        }
+      },
+      {
+        "dp": 16500000,
+        "rates": {
+          "11": 2268000,
+          "17": 1626000,
+          "23": 1310000,
+          "29": 1138000,
+          "35": 1001000
+        }
+      },
+      {
+        "dp": 17000000,
+        "rates": {
+          "11": 2211000,
+          "17": 1586000,
+          "23": 1278000,
+          "29": 1110000,
+          "35": 977000
+        }
+      },
+      {
+        "dp": 17500000,
+        "rates": {
+          "11": 2154000,
+          "17": 1545000,
+          "23": 1247000,
+          "29": 1083000,
+          "35": 954000
+        }
+      },
+      {
+        "dp": 18000000,
+        "rates": {
+          "11": 2097000,
+          "17": 1505000,
+          "23": 1215000,
+          "29": 1056000,
+          "35": 930000
+        }
+      },
+      {
+        "dp": 18500000,
+        "rates": {
+          "11": 2040000,
+          "17": 1465000,
+          "23": 1183000,
+          "29": 1029000,
+          "35": 906000
+        }
+      },
+      {
+        "dp": 19000000,
+        "rates": {
+          "11": 1984000,
+          "17": 1425000,
+          "23": 1151000,
+          "29": 1002000,
+          "35": 883000
+        }
+      },
+      {
+        "dp": 19500000,
+        "rates": {
+          "11": 1927000,
+          "17": 1385000,
+          "23": 1120000,
+          "29": 975000,
+          "35": 859000
+        }
+      },
+      {
+        "dp": 20000000,
+        "rates": {
+          "11": 1870000,
+          "17": 1345000,
+          "23": 1088000,
+          "29": 947000,
+          "35": 836000
+        }
+      }
+    ],
+    "variants": [
+      {
+        "colorName": "Royal Matte Black",
+        "hex": "#1f1f1f",
+        "image": "WhatsApp Image 2026-07-02 at 11.11.37.jpeg"
+      }
+    ]
+  },
+  {
+    "id": "all-new-stylo-cbs",
+    "name": "Stylo CBS",
+    "folder": "ALL NEW STYLO CBS",
     "category": "Stylo Series",
     "otr_price": 30050000.0,
     "images": [
-      "WhatsApp Image 2026-07-03 at 16.48.19 (1).jpeg",
-      "WhatsApp Image 2026-07-03 at 16.48.19.jpeg"
+      "WhatsApp Image 2026-07-02 at 11.09.38 (1).jpeg",
+      "WhatsApp Image 2026-07-02 at 11.09.38 (2).jpeg",
+      "WhatsApp Image 2026-07-02 at 11.09.38.jpeg"
     ],
     "installments": [
       {
@@ -9354,12 +10445,17 @@ const PRODUCTS_DATA = [
       {
         "colorName": "Royal Matte Black",
         "hex": "#1f1f1f",
-        "image": "WhatsApp Image 2026-07-03 at 16.48.19 (1).jpeg"
+        "image": "WhatsApp Image 2026-07-02 at 11.09.38 (1).jpeg"
       },
       {
         "colorName": "Glam Beige",
         "hex": "#d7ccc8",
-        "image": "WhatsApp Image 2026-07-03 at 16.48.19.jpeg"
+        "image": "WhatsApp Image 2026-07-02 at 11.09.38 (2).jpeg"
+      },
+      {
+        "colorName": "Royal Matte White",
+        "hex": "#eceff1",
+        "image": "WhatsApp Image 2026-07-02 at 11.09.38.jpeg"
       }
     ]
   },
@@ -10444,11 +11540,9 @@ const PRODUCTS_DATA = [
     "category": "Vario Series",
     "otr_price": 25150000.0,
     "images": [
-      "WhatsApp Image 2026-07-03 at 16.48.15.jpeg",
-      "WhatsApp Image 2026-07-03 at 16.48.16 (1).jpeg",
-      "WhatsApp Image 2026-07-03 at 16.48.16 (2).jpeg",
-      "WhatsApp Image 2026-07-03 at 16.48.16.jpeg",
-      "WhatsApp Image 2026-07-03 at 16.48.17.jpeg"
+      "WhatsApp Image 2026-07-02 at 10.57.51 (1).jpeg",
+      "WhatsApp Image 2026-07-02 at 10.57.51.jpeg",
+      "WhatsApp Image 2026-07-02 at 10.57.52.jpeg"
     ],
     "installments": [
       {
@@ -10716,39 +11810,693 @@ const PRODUCTS_DATA = [
       {
         "colorName": "Active Black",
         "hex": "#1c1c1c",
-        "image": "WhatsApp Image 2026-07-03 at 16.48.15.jpeg"
+        "image": "WhatsApp Image 2026-07-02 at 10.57.51 (1).jpeg"
       },
       {
         "colorName": "Sporty Red",
         "hex": "#d32f2f",
-        "image": "WhatsApp Image 2026-07-03 at 16.48.16 (1).jpeg"
+        "image": "WhatsApp Image 2026-07-02 at 10.57.51.jpeg"
       },
       {
         "colorName": "Matte Blue",
         "hex": "#1a237e",
-        "image": "WhatsApp Image 2026-07-03 at 16.48.16 (2).jpeg"
-      },
-      {
-        "colorName": "Matte Silver",
-        "hex": "#cfd8dc",
-        "image": "WhatsApp Image 2026-07-03 at 16.48.16.jpeg"
-      },
-      {
-        "colorName": "Matte Black",
-        "hex": "#263238",
-        "image": "WhatsApp Image 2026-07-03 at 16.48.17.jpeg"
+        "image": "WhatsApp Image 2026-07-02 at 10.57.52.jpeg"
       }
     ]
   },
   {
-    "id": "all-new-vario-160-evo-abs",
-    "name": "Vario 160 EVO ABS",
-    "folder": "ALL NEW VARIO 160 EVO ABS",
+    "id": "all-new-vario-125-cbs-iss",
+    "name": "Vario 125 CBS ISS",
+    "folder": "ALL NEW VARIO 125 CBS ISS",
+    "category": "Vario Series",
+    "otr_price": 27025000.0,
+    "images": [
+      "WhatsApp Image 2026-07-02 at 10.59.00 (1).jpeg",
+      "WhatsApp Image 2026-07-02 at 10.59.00.jpeg",
+      "WhatsApp Image 2026-07-02 at 10.59.01.jpeg"
+    ],
+    "installments": [
+      {
+        "dp": 2800000,
+        "rates": {
+          "11": 2889000,
+          "17": 2044000,
+          "23": 1616000,
+          "29": 1387000,
+          "35": 1230000
+        }
+      },
+      {
+        "dp": 3400000,
+        "rates": {
+          "11": 2840000,
+          "17": 2005000,
+          "23": 1586000,
+          "29": 1355000,
+          "35": 1202000
+        }
+      },
+      {
+        "dp": 4100000,
+        "rates": {
+          "11": 2760000,
+          "17": 1950000,
+          "23": 1543000,
+          "29": 1325000,
+          "35": 1182000
+        }
+      },
+      {
+        "dp": 4500000,
+        "rates": {
+          "11": 2727000,
+          "17": 1931000,
+          "23": 1518000,
+          "29": 1304000,
+          "35": 1164000
+        }
+      },
+      {
+        "dp": 5000000,
+        "rates": {
+          "11": 2671000,
+          "17": 1891000,
+          "23": 1500000,
+          "29": 1291000,
+          "35": 1140000
+        }
+      },
+      {
+        "dp": 5500000,
+        "rates": {
+          "11": 2614000,
+          "17": 1851000,
+          "23": 1469000,
+          "29": 1265000,
+          "35": 1131000
+        }
+      },
+      {
+        "dp": 6000000,
+        "rates": {
+          "11": 2569000,
+          "17": 1823000,
+          "23": 1437000,
+          "29": 1238000,
+          "35": 1107000
+        }
+      },
+      {
+        "dp": 6500000,
+        "rates": {
+          "11": 2511000,
+          "17": 1783000,
+          "23": 1418000,
+          "29": 1224000,
+          "35": 1084000
+        }
+      },
+      {
+        "dp": 7000000,
+        "rates": {
+          "11": 2465000,
+          "17": 1743000,
+          "23": 1387000,
+          "29": 1197000,
+          "35": 1073000
+        }
+      },
+      {
+        "dp": 7500000,
+        "rates": {
+          "11": 2408000,
+          "17": 1714000,
+          "23": 1367000,
+          "29": 1170000,
+          "35": 1049000
+        }
+      },
+      {
+        "dp": 8000000,
+        "rates": {
+          "11": 2351000,
+          "17": 1674000,
+          "23": 1335000,
+          "29": 1155000,
+          "35": 1038000
+        }
+      },
+      {
+        "dp": 8500000,
+        "rates": {
+          "11": 2304000,
+          "17": 1644000,
+          "23": 1303000,
+          "29": 1128000,
+          "35": 1013000
+        }
+      },
+      {
+        "dp": 9000000,
+        "rates": {
+          "11": 2246000,
+          "17": 1604000,
+          "23": 1282000,
+          "29": 1112000,
+          "35": 989000
+        }
+      },
+      {
+        "dp": 9500000,
+        "rates": {
+          "11": 2189000,
+          "17": 1563000,
+          "23": 1250000,
+          "29": 1085000,
+          "35": 977000
+        }
+      },
+      {
+        "dp": 10000000,
+        "rates": {
+          "11": 2131000,
+          "17": 1523000,
+          "23": 1218000,
+          "29": 1057000,
+          "35": 952000
+        }
+      },
+      {
+        "dp": 10500000,
+        "rates": {
+          "11": 2073000,
+          "17": 1482000,
+          "23": 1186000,
+          "29": 1030000,
+          "35": 928000
+        }
+      },
+      {
+        "dp": 11000000,
+        "rates": {
+          "11": 2016000,
+          "17": 1442000,
+          "23": 1154000,
+          "29": 1003000,
+          "35": 903000
+        }
+      },
+      {
+        "dp": 11500000,
+        "rates": {
+          "11": 1958000,
+          "17": 1401000,
+          "23": 1122000,
+          "29": 975000,
+          "35": 879000
+        }
+      },
+      {
+        "dp": 12000000,
+        "rates": {
+          "11": 1901000,
+          "17": 1360000,
+          "23": 1090000,
+          "29": 948000,
+          "35": 855000
+        }
+      },
+      {
+        "dp": 12500000,
+        "rates": {
+          "11": 1843000,
+          "17": 1320000,
+          "23": 1058000,
+          "29": 920000,
+          "35": 830000
+        }
+      },
+      {
+        "dp": 13000000,
+        "rates": {
+          "11": 1785000,
+          "17": 1279000,
+          "23": 1026000,
+          "29": 893000,
+          "35": 806000
+        }
+      },
+      {
+        "dp": 13500000,
+        "rates": {
+          "11": 1728000,
+          "17": 1239000,
+          "23": 994000,
+          "29": 865000,
+          "35": 781000
+        }
+      },
+      {
+        "dp": 14000000,
+        "rates": {
+          "11": 1670000,
+          "17": 1198000,
+          "23": 962000,
+          "29": 838000,
+          "35": 757000
+        }
+      },
+      {
+        "dp": 14500000,
+        "rates": {
+          "11": 1613000,
+          "17": 1158000,
+          "23": 930000,
+          "29": 811000,
+          "35": 733000
+        }
+      },
+      {
+        "dp": 15000000,
+        "rates": {
+          "11": 1555000,
+          "17": 1117000,
+          "23": 898000,
+          "29": 783000,
+          "35": 708000
+        }
+      },
+      {
+        "dp": 15500000,
+        "rates": {
+          "11": 1497000,
+          "17": 1076000,
+          "23": 866000,
+          "29": 756000,
+          "35": 684000
+        }
+      },
+      {
+        "dp": 16000000,
+        "rates": {
+          "11": 1440000,
+          "17": 1036000,
+          "23": 834000,
+          "29": 728000,
+          "35": 659000
+        }
+      },
+      {
+        "dp": 16500000,
+        "rates": {
+          "11": 1382000,
+          "17": 995000,
+          "23": 802000,
+          "29": 701000,
+          "35": 635000
+        }
+      },
+      {
+        "dp": 17000000,
+        "rates": {
+          "11": 1325000,
+          "17": 955000,
+          "23": 770000,
+          "29": 673000,
+          "35": 611000
+        }
+      },
+      {
+        "dp": 17500000,
+        "rates": {
+          "11": 1267000,
+          "17": 914000,
+          "23": 738000,
+          "29": 646000,
+          "35": 586000
+        }
+      }
+    ],
+    "variants": [
+      {
+        "colorName": "Active Black",
+        "hex": "#1c1c1c",
+        "image": "WhatsApp Image 2026-07-02 at 10.59.00 (1).jpeg"
+      },
+      {
+        "colorName": "Sporty Red",
+        "hex": "#d32f2f",
+        "image": "WhatsApp Image 2026-07-02 at 10.59.00.jpeg"
+      },
+      {
+        "colorName": "Matte Blue",
+        "hex": "#1a237e",
+        "image": "WhatsApp Image 2026-07-02 at 10.59.01.jpeg"
+      }
+    ]
+  },
+  {
+    "id": "all-new-vario-125-street",
+    "name": "Vario 125 Street",
+    "folder": "ALL NEW VARIO 125 STREET",
+    "category": "Vario Series",
+    "otr_price": 27450000.0,
+    "images": [
+      "IMG_202607185_094805202.jpeg",
+      "WhatsApp Image 2026-07-02 at 11.00.07.jpeg",
+      "WhatsApp Image 2026-07-02 at 11.00.08.jpeg"
+    ],
+    "installments": [
+      {
+        "dp": 2800000,
+        "rates": {
+          "11": 2938000,
+          "17": 2078000,
+          "23": 1643000,
+          "29": 1411000,
+          "35": 1251000
+        }
+      },
+      {
+        "dp": 3500000,
+        "rates": {
+          "11": 2878000,
+          "17": 2032000,
+          "23": 1607000,
+          "29": 1375000,
+          "35": 1219000
+        }
+      },
+      {
+        "dp": 4200000,
+        "rates": {
+          "11": 2798000,
+          "17": 1977000,
+          "23": 1564000,
+          "29": 1344000,
+          "35": 1199000
+        }
+      },
+      {
+        "dp": 4500000,
+        "rates": {
+          "11": 2777000,
+          "17": 1966000,
+          "23": 1545000,
+          "29": 1328000,
+          "35": 1185000
+        }
+      },
+      {
+        "dp": 5000000,
+        "rates": {
+          "11": 2720000,
+          "17": 1926000,
+          "23": 1527000,
+          "29": 1312000,
+          "35": 1161000
+        }
+      },
+      {
+        "dp": 5500000,
+        "rates": {
+          "11": 2663000,
+          "17": 1886000,
+          "23": 1496000,
+          "29": 1289000,
+          "35": 1152000
+        }
+      },
+      {
+        "dp": 6000000,
+        "rates": {
+          "11": 2618000,
+          "17": 1859000,
+          "23": 1465000,
+          "29": 1262000,
+          "35": 1128000
+        }
+      },
+      {
+        "dp": 6500000,
+        "rates": {
+          "11": 2561000,
+          "17": 1818000,
+          "23": 1446000,
+          "29": 1248000,
+          "35": 1105000
+        }
+      },
+      {
+        "dp": 7000000,
+        "rates": {
+          "11": 2515000,
+          "17": 1778000,
+          "23": 1415000,
+          "29": 1221000,
+          "35": 1094000
+        }
+      },
+      {
+        "dp": 7500000,
+        "rates": {
+          "11": 2458000,
+          "17": 1750000,
+          "23": 1383000,
+          "29": 1194000,
+          "35": 1071000
+        }
+      },
+      {
+        "dp": 8000000,
+        "rates": {
+          "11": 2401000,
+          "17": 1709000,
+          "23": 1363000,
+          "29": 1180000,
+          "35": 1059000
+        }
+      },
+      {
+        "dp": 8500000,
+        "rates": {
+          "11": 2354000,
+          "17": 1669000,
+          "23": 1332000,
+          "29": 1152000,
+          "35": 1035000
+        }
+      },
+      {
+        "dp": 9000000,
+        "rates": {
+          "11": 2296000,
+          "17": 1640000,
+          "23": 1311000,
+          "29": 1125000,
+          "35": 1011000
+        }
+      },
+      {
+        "dp": 9500000,
+        "rates": {
+          "11": 2239000,
+          "17": 1599000,
+          "23": 1279000,
+          "29": 1109000,
+          "35": 999000
+        }
+      },
+      {
+        "dp": 10000000,
+        "rates": {
+          "11": 2181000,
+          "17": 1558000,
+          "23": 1247000,
+          "29": 1082000,
+          "35": 974000
+        }
+      },
+      {
+        "dp": 10500000,
+        "rates": {
+          "11": 2123000,
+          "17": 1518000,
+          "23": 1215000,
+          "29": 1055000,
+          "35": 950000
+        }
+      },
+      {
+        "dp": 11000000,
+        "rates": {
+          "11": 2066000,
+          "17": 1477000,
+          "23": 1183000,
+          "29": 1027000,
+          "35": 925000
+        }
+      },
+      {
+        "dp": 11500000,
+        "rates": {
+          "11": 2008000,
+          "17": 1437000,
+          "23": 1151000,
+          "29": 1000000,
+          "35": 901000
+        }
+      },
+      {
+        "dp": 12000000,
+        "rates": {
+          "11": 1951000,
+          "17": 1396000,
+          "23": 1119000,
+          "29": 972000,
+          "35": 877000
+        }
+      },
+      {
+        "dp": 12500000,
+        "rates": {
+          "11": 1893000,
+          "17": 1356000,
+          "23": 1087000,
+          "29": 945000,
+          "35": 852000
+        }
+      },
+      {
+        "dp": 13000000,
+        "rates": {
+          "11": 1836000,
+          "17": 1315000,
+          "23": 1055000,
+          "29": 917000,
+          "35": 828000
+        }
+      },
+      {
+        "dp": 13500000,
+        "rates": {
+          "11": 1778000,
+          "17": 1274000,
+          "23": 1023000,
+          "29": 890000,
+          "35": 803000
+        }
+      },
+      {
+        "dp": 14000000,
+        "rates": {
+          "11": 1720000,
+          "17": 1234000,
+          "23": 991000,
+          "29": 862000,
+          "35": 779000
+        }
+      },
+      {
+        "dp": 14500000,
+        "rates": {
+          "11": 1663000,
+          "17": 1193000,
+          "23": 959000,
+          "29": 835000,
+          "35": 755000
+        }
+      },
+      {
+        "dp": 15000000,
+        "rates": {
+          "11": 1605000,
+          "17": 1153000,
+          "23": 927000,
+          "29": 808000,
+          "35": 730000
+        }
+      },
+      {
+        "dp": 15500000,
+        "rates": {
+          "11": 1548000,
+          "17": 1112000,
+          "23": 895000,
+          "29": 780000,
+          "35": 706000
+        }
+      },
+      {
+        "dp": 16000000,
+        "rates": {
+          "11": 1490000,
+          "17": 1072000,
+          "23": 863000,
+          "29": 753000,
+          "35": 681000
+        }
+      },
+      {
+        "dp": 16500000,
+        "rates": {
+          "11": 1432000,
+          "17": 1031000,
+          "23": 831000,
+          "29": 725000,
+          "35": 657000
+        }
+      },
+      {
+        "dp": 17000000,
+        "rates": {
+          "11": 1375000,
+          "17": 990000,
+          "23": 799000,
+          "29": 698000,
+          "35": 632000
+        }
+      },
+      {
+        "dp": 17500000,
+        "rates": {
+          "11": 1317000,
+          "17": 950000,
+          "23": 767000,
+          "29": 670000,
+          "35": 608000
+        }
+      }
+    ],
+    "variants": [
+      {
+        "colorName": "Active Black",
+        "hex": "#1c1c1c",
+        "image": "IMG_202607185_094805202.jpeg"
+      },
+      {
+        "colorName": "Sporty Red",
+        "hex": "#d32f2f",
+        "image": "WhatsApp Image 2026-07-02 at 11.00.07.jpeg"
+      },
+      {
+        "colorName": "Matte Blue",
+        "hex": "#1a237e",
+        "image": "WhatsApp Image 2026-07-02 at 11.00.08.jpeg"
+      }
+    ]
+  },
+  {
+    "id": "all-new-vario-160-abs",
+    "name": "Vario 160 ABS",
+    "folder": "ALL NEW VARIO 160 ABS",
     "category": "Vario Series",
     "otr_price": 31825000.0,
     "images": [
-      "WhatsApp Image 2026-07-03 at 16.47.57 (1).jpeg",
-      "WhatsApp Image 2026-07-03 at 16.47.59.jpeg"
+      "WhatsApp Image 2026-07-02 at 11.08.06 (1).jpeg",
+      "WhatsApp Image 2026-07-02 at 11.08.06 (2).jpeg",
+      "WhatsApp Image 2026-07-02 at 11.08.06.jpeg",
+      "WhatsApp Image 2026-07-02 at 11.08.07.jpeg"
     ],
     "installments": [
       {
@@ -11086,25 +12834,34 @@ const PRODUCTS_DATA = [
       {
         "colorName": "Active Black",
         "hex": "#1c1c1c",
-        "image": "WhatsApp Image 2026-07-03 at 16.47.57 (1).jpeg"
+        "image": "WhatsApp Image 2026-07-02 at 11.08.06 (1).jpeg"
       },
       {
         "colorName": "Sporty Red",
         "hex": "#d32f2f",
-        "image": "WhatsApp Image 2026-07-03 at 16.47.59.jpeg"
+        "image": "WhatsApp Image 2026-07-02 at 11.08.06 (2).jpeg"
+      },
+      {
+        "colorName": "Matte Blue",
+        "hex": "#1a237e",
+        "image": "WhatsApp Image 2026-07-02 at 11.08.06.jpeg"
+      },
+      {
+        "colorName": "Matte Silver",
+        "hex": "#cfd8dc",
+        "image": "WhatsApp Image 2026-07-02 at 11.08.07.jpeg"
       }
     ]
   },
   {
-    "id": "all-new-vario-160-evo-cbs",
-    "name": "Vario 160 EVO CBS",
-    "folder": "ALL NEW VARIO 160 EVO CBS",
+    "id": "all-new-vario-160-cbs",
+    "name": "Vario 160 CBS",
+    "folder": "ALL NEW VARIO 160 CBS",
     "category": "Vario Series",
     "otr_price": 28800000.0,
     "images": [
-      "WhatsApp Image 2026-07-03 at 16.47.54.jpeg",
-      "WhatsApp Image 2026-07-03 at 16.47.55 (1).jpeg",
-      "WhatsApp Image 2026-07-03 at 16.47.55.jpeg"
+      "WhatsApp Image 2026-07-02 at 11.04.57 (1).jpeg",
+      "WhatsApp Image 2026-07-02 at 11.04.57.jpeg"
     ],
     "installments": [
       {
@@ -11412,679 +13169,24 @@ const PRODUCTS_DATA = [
       {
         "colorName": "Active Black",
         "hex": "#1c1c1c",
-        "image": "WhatsApp Image 2026-07-03 at 16.47.54.jpeg"
+        "image": "WhatsApp Image 2026-07-02 at 11.04.57 (1).jpeg"
       },
       {
         "colorName": "Sporty Red",
         "hex": "#d32f2f",
-        "image": "WhatsApp Image 2026-07-03 at 16.47.55 (1).jpeg"
-      },
-      {
-        "colorName": "Matte Blue",
-        "hex": "#1a237e",
-        "image": "WhatsApp Image 2026-07-03 at 16.47.55.jpeg"
+        "image": "WhatsApp Image 2026-07-02 at 11.04.57.jpeg"
       }
     ]
   },
   {
-    "id": "all-new-vario-cbs-iss-125",
-    "name": "Vario CBS ISS 125",
-    "folder": "ALL NEW VARIO CBS ISS 125",
-    "category": "Vario Series",
-    "otr_price": 27025000.0,
-    "images": [
-      "WhatsApp Image 2026-07-03 at 16.48.17 (1).jpeg"
-    ],
-    "installments": [
-      {
-        "dp": 2800000,
-        "rates": {
-          "11": 2889000,
-          "17": 2044000,
-          "23": 1616000,
-          "29": 1387000,
-          "35": 1230000
-        }
-      },
-      {
-        "dp": 3400000,
-        "rates": {
-          "11": 2840000,
-          "17": 2005000,
-          "23": 1586000,
-          "29": 1355000,
-          "35": 1202000
-        }
-      },
-      {
-        "dp": 4100000,
-        "rates": {
-          "11": 2760000,
-          "17": 1950000,
-          "23": 1543000,
-          "29": 1325000,
-          "35": 1182000
-        }
-      },
-      {
-        "dp": 4500000,
-        "rates": {
-          "11": 2727000,
-          "17": 1931000,
-          "23": 1518000,
-          "29": 1304000,
-          "35": 1164000
-        }
-      },
-      {
-        "dp": 5000000,
-        "rates": {
-          "11": 2671000,
-          "17": 1891000,
-          "23": 1500000,
-          "29": 1291000,
-          "35": 1140000
-        }
-      },
-      {
-        "dp": 5500000,
-        "rates": {
-          "11": 2614000,
-          "17": 1851000,
-          "23": 1469000,
-          "29": 1265000,
-          "35": 1131000
-        }
-      },
-      {
-        "dp": 6000000,
-        "rates": {
-          "11": 2569000,
-          "17": 1823000,
-          "23": 1437000,
-          "29": 1238000,
-          "35": 1107000
-        }
-      },
-      {
-        "dp": 6500000,
-        "rates": {
-          "11": 2511000,
-          "17": 1783000,
-          "23": 1418000,
-          "29": 1224000,
-          "35": 1084000
-        }
-      },
-      {
-        "dp": 7000000,
-        "rates": {
-          "11": 2465000,
-          "17": 1743000,
-          "23": 1387000,
-          "29": 1197000,
-          "35": 1073000
-        }
-      },
-      {
-        "dp": 7500000,
-        "rates": {
-          "11": 2408000,
-          "17": 1714000,
-          "23": 1367000,
-          "29": 1170000,
-          "35": 1049000
-        }
-      },
-      {
-        "dp": 8000000,
-        "rates": {
-          "11": 2351000,
-          "17": 1674000,
-          "23": 1335000,
-          "29": 1155000,
-          "35": 1038000
-        }
-      },
-      {
-        "dp": 8500000,
-        "rates": {
-          "11": 2304000,
-          "17": 1644000,
-          "23": 1303000,
-          "29": 1128000,
-          "35": 1013000
-        }
-      },
-      {
-        "dp": 9000000,
-        "rates": {
-          "11": 2246000,
-          "17": 1604000,
-          "23": 1282000,
-          "29": 1112000,
-          "35": 989000
-        }
-      },
-      {
-        "dp": 9500000,
-        "rates": {
-          "11": 2189000,
-          "17": 1563000,
-          "23": 1250000,
-          "29": 1085000,
-          "35": 977000
-        }
-      },
-      {
-        "dp": 10000000,
-        "rates": {
-          "11": 2131000,
-          "17": 1523000,
-          "23": 1218000,
-          "29": 1057000,
-          "35": 952000
-        }
-      },
-      {
-        "dp": 10500000,
-        "rates": {
-          "11": 2073000,
-          "17": 1482000,
-          "23": 1186000,
-          "29": 1030000,
-          "35": 928000
-        }
-      },
-      {
-        "dp": 11000000,
-        "rates": {
-          "11": 2016000,
-          "17": 1442000,
-          "23": 1154000,
-          "29": 1003000,
-          "35": 903000
-        }
-      },
-      {
-        "dp": 11500000,
-        "rates": {
-          "11": 1958000,
-          "17": 1401000,
-          "23": 1122000,
-          "29": 975000,
-          "35": 879000
-        }
-      },
-      {
-        "dp": 12000000,
-        "rates": {
-          "11": 1901000,
-          "17": 1360000,
-          "23": 1090000,
-          "29": 948000,
-          "35": 855000
-        }
-      },
-      {
-        "dp": 12500000,
-        "rates": {
-          "11": 1843000,
-          "17": 1320000,
-          "23": 1058000,
-          "29": 920000,
-          "35": 830000
-        }
-      },
-      {
-        "dp": 13000000,
-        "rates": {
-          "11": 1785000,
-          "17": 1279000,
-          "23": 1026000,
-          "29": 893000,
-          "35": 806000
-        }
-      },
-      {
-        "dp": 13500000,
-        "rates": {
-          "11": 1728000,
-          "17": 1239000,
-          "23": 994000,
-          "29": 865000,
-          "35": 781000
-        }
-      },
-      {
-        "dp": 14000000,
-        "rates": {
-          "11": 1670000,
-          "17": 1198000,
-          "23": 962000,
-          "29": 838000,
-          "35": 757000
-        }
-      },
-      {
-        "dp": 14500000,
-        "rates": {
-          "11": 1613000,
-          "17": 1158000,
-          "23": 930000,
-          "29": 811000,
-          "35": 733000
-        }
-      },
-      {
-        "dp": 15000000,
-        "rates": {
-          "11": 1555000,
-          "17": 1117000,
-          "23": 898000,
-          "29": 783000,
-          "35": 708000
-        }
-      },
-      {
-        "dp": 15500000,
-        "rates": {
-          "11": 1497000,
-          "17": 1076000,
-          "23": 866000,
-          "29": 756000,
-          "35": 684000
-        }
-      },
-      {
-        "dp": 16000000,
-        "rates": {
-          "11": 1440000,
-          "17": 1036000,
-          "23": 834000,
-          "29": 728000,
-          "35": 659000
-        }
-      },
-      {
-        "dp": 16500000,
-        "rates": {
-          "11": 1382000,
-          "17": 995000,
-          "23": 802000,
-          "29": 701000,
-          "35": 635000
-        }
-      },
-      {
-        "dp": 17000000,
-        "rates": {
-          "11": 1325000,
-          "17": 955000,
-          "23": 770000,
-          "29": 673000,
-          "35": 611000
-        }
-      },
-      {
-        "dp": 17500000,
-        "rates": {
-          "11": 1267000,
-          "17": 914000,
-          "23": 738000,
-          "29": 646000,
-          "35": 586000
-        }
-      }
-    ],
-    "variants": [
-      {
-        "colorName": "Active Black",
-        "hex": "#1c1c1c",
-        "image": "WhatsApp Image 2026-07-03 at 16.48.17 (1).jpeg"
-      }
-    ]
-  },
-  {
-    "id": "all-new-vario-street-125",
-    "name": "Vario Street 125",
-    "folder": "ALL NEW VARIO STREET 125",
-    "category": "Vario Series",
-    "otr_price": 27450000.0,
-    "images": [
-      "WhatsApp Image 2026-07-03 at 16.48.17 (2).jpeg",
-      "WhatsApp Image 2026-07-03 at 16.48.18 (1).jpeg",
-      "WhatsApp Image 2026-07-03 at 16.48.18.jpeg"
-    ],
-    "installments": [
-      {
-        "dp": 2800000,
-        "rates": {
-          "11": 2938000,
-          "17": 2078000,
-          "23": 1643000,
-          "29": 1411000,
-          "35": 1251000
-        }
-      },
-      {
-        "dp": 3500000,
-        "rates": {
-          "11": 2878000,
-          "17": 2032000,
-          "23": 1607000,
-          "29": 1375000,
-          "35": 1219000
-        }
-      },
-      {
-        "dp": 4200000,
-        "rates": {
-          "11": 2798000,
-          "17": 1977000,
-          "23": 1564000,
-          "29": 1344000,
-          "35": 1199000
-        }
-      },
-      {
-        "dp": 4500000,
-        "rates": {
-          "11": 2777000,
-          "17": 1966000,
-          "23": 1545000,
-          "29": 1328000,
-          "35": 1185000
-        }
-      },
-      {
-        "dp": 5000000,
-        "rates": {
-          "11": 2720000,
-          "17": 1926000,
-          "23": 1527000,
-          "29": 1312000,
-          "35": 1161000
-        }
-      },
-      {
-        "dp": 5500000,
-        "rates": {
-          "11": 2663000,
-          "17": 1886000,
-          "23": 1496000,
-          "29": 1289000,
-          "35": 1152000
-        }
-      },
-      {
-        "dp": 6000000,
-        "rates": {
-          "11": 2618000,
-          "17": 1859000,
-          "23": 1465000,
-          "29": 1262000,
-          "35": 1128000
-        }
-      },
-      {
-        "dp": 6500000,
-        "rates": {
-          "11": 2561000,
-          "17": 1818000,
-          "23": 1446000,
-          "29": 1248000,
-          "35": 1105000
-        }
-      },
-      {
-        "dp": 7000000,
-        "rates": {
-          "11": 2515000,
-          "17": 1778000,
-          "23": 1415000,
-          "29": 1221000,
-          "35": 1094000
-        }
-      },
-      {
-        "dp": 7500000,
-        "rates": {
-          "11": 2458000,
-          "17": 1750000,
-          "23": 1383000,
-          "29": 1194000,
-          "35": 1071000
-        }
-      },
-      {
-        "dp": 8000000,
-        "rates": {
-          "11": 2401000,
-          "17": 1709000,
-          "23": 1363000,
-          "29": 1180000,
-          "35": 1059000
-        }
-      },
-      {
-        "dp": 8500000,
-        "rates": {
-          "11": 2354000,
-          "17": 1669000,
-          "23": 1332000,
-          "29": 1152000,
-          "35": 1035000
-        }
-      },
-      {
-        "dp": 9000000,
-        "rates": {
-          "11": 2296000,
-          "17": 1640000,
-          "23": 1311000,
-          "29": 1125000,
-          "35": 1011000
-        }
-      },
-      {
-        "dp": 9500000,
-        "rates": {
-          "11": 2239000,
-          "17": 1599000,
-          "23": 1279000,
-          "29": 1109000,
-          "35": 999000
-        }
-      },
-      {
-        "dp": 10000000,
-        "rates": {
-          "11": 2181000,
-          "17": 1558000,
-          "23": 1247000,
-          "29": 1082000,
-          "35": 974000
-        }
-      },
-      {
-        "dp": 10500000,
-        "rates": {
-          "11": 2123000,
-          "17": 1518000,
-          "23": 1215000,
-          "29": 1055000,
-          "35": 950000
-        }
-      },
-      {
-        "dp": 11000000,
-        "rates": {
-          "11": 2066000,
-          "17": 1477000,
-          "23": 1183000,
-          "29": 1027000,
-          "35": 925000
-        }
-      },
-      {
-        "dp": 11500000,
-        "rates": {
-          "11": 2008000,
-          "17": 1437000,
-          "23": 1151000,
-          "29": 1000000,
-          "35": 901000
-        }
-      },
-      {
-        "dp": 12000000,
-        "rates": {
-          "11": 1951000,
-          "17": 1396000,
-          "23": 1119000,
-          "29": 972000,
-          "35": 877000
-        }
-      },
-      {
-        "dp": 12500000,
-        "rates": {
-          "11": 1893000,
-          "17": 1356000,
-          "23": 1087000,
-          "29": 945000,
-          "35": 852000
-        }
-      },
-      {
-        "dp": 13000000,
-        "rates": {
-          "11": 1836000,
-          "17": 1315000,
-          "23": 1055000,
-          "29": 917000,
-          "35": 828000
-        }
-      },
-      {
-        "dp": 13500000,
-        "rates": {
-          "11": 1778000,
-          "17": 1274000,
-          "23": 1023000,
-          "29": 890000,
-          "35": 803000
-        }
-      },
-      {
-        "dp": 14000000,
-        "rates": {
-          "11": 1720000,
-          "17": 1234000,
-          "23": 991000,
-          "29": 862000,
-          "35": 779000
-        }
-      },
-      {
-        "dp": 14500000,
-        "rates": {
-          "11": 1663000,
-          "17": 1193000,
-          "23": 959000,
-          "29": 835000,
-          "35": 755000
-        }
-      },
-      {
-        "dp": 15000000,
-        "rates": {
-          "11": 1605000,
-          "17": 1153000,
-          "23": 927000,
-          "29": 808000,
-          "35": 730000
-        }
-      },
-      {
-        "dp": 15500000,
-        "rates": {
-          "11": 1548000,
-          "17": 1112000,
-          "23": 895000,
-          "29": 780000,
-          "35": 706000
-        }
-      },
-      {
-        "dp": 16000000,
-        "rates": {
-          "11": 1490000,
-          "17": 1072000,
-          "23": 863000,
-          "29": 753000,
-          "35": 681000
-        }
-      },
-      {
-        "dp": 16500000,
-        "rates": {
-          "11": 1432000,
-          "17": 1031000,
-          "23": 831000,
-          "29": 725000,
-          "35": 657000
-        }
-      },
-      {
-        "dp": 17000000,
-        "rates": {
-          "11": 1375000,
-          "17": 990000,
-          "23": 799000,
-          "29": 698000,
-          "35": 632000
-        }
-      },
-      {
-        "dp": 17500000,
-        "rates": {
-          "11": 1317000,
-          "17": 950000,
-          "23": 767000,
-          "29": 670000,
-          "35": 608000
-        }
-      }
-    ],
-    "variants": [
-      {
-        "colorName": "Active Black",
-        "hex": "#1c1c1c",
-        "image": "WhatsApp Image 2026-07-03 at 16.48.17 (2).jpeg"
-      },
-      {
-        "colorName": "Sporty Red",
-        "hex": "#d32f2f",
-        "image": "WhatsApp Image 2026-07-03 at 16.48.18 (1).jpeg"
-      },
-      {
-        "colorName": "Matte Blue",
-        "hex": "#1a237e",
-        "image": "WhatsApp Image 2026-07-03 at 16.48.18.jpeg"
-      }
-    ]
-  },
-  {
-    "id": "all-new-vario-160-evo-cbs-nitro",
-    "name": "Vario 160 EVO CBS Nitro",
-    "folder": "All NEW VARIO 160 EVO CBS NITRO",
+    "id": "all-new-vario-160-cbs-nitro",
+    "name": "Vario 160 CBS Nitro",
+    "folder": "ALL NEW VARIO 160 CBS NITRO",
     "category": "Vario Series",
     "otr_price": 29050000.0,
     "images": [
-      "WhatsApp Image 2026-07-03 at 16.47.56.jpeg",
-      "WhatsApp Image 2026-07-03 at 16.47.57.jpeg"
+      "WhatsApp Image 2026-07-02 at 11.06.51 (1).jpeg",
+      "WhatsApp Image 2026-07-02 at 11.06.51.jpeg"
     ],
     "installments": [
       {
@@ -12382,12 +13484,12 @@ const PRODUCTS_DATA = [
       {
         "colorName": "Active Black",
         "hex": "#1c1c1c",
-        "image": "WhatsApp Image 2026-07-03 at 16.47.56.jpeg"
+        "image": "WhatsApp Image 2026-07-02 at 11.06.51 (1).jpeg"
       },
       {
         "colorName": "Sporty Red",
         "hex": "#d32f2f",
-        "image": "WhatsApp Image 2026-07-03 at 16.47.57.jpeg"
+        "image": "WhatsApp Image 2026-07-02 at 11.06.51.jpeg"
       }
     ]
   }
