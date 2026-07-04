@@ -1331,7 +1331,7 @@ button, select {
 
 .modal-card__body {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1.2fr 1fr;
     height: 100%;
     overflow: hidden;
 }
@@ -1744,18 +1744,13 @@ button, select {
         grid-column: 1 / -1;
     }
     .modal-card__body {
-        grid-template-columns: 1fr;
-        overflow-y: auto;
+        grid-template-columns: 1.2fr 1fr;
     }
     .modal-card__gallery {
-        border-right: none;
-        border-bottom: 1px solid var(--border);
-        padding: 30px;
-        overflow-y: visible;
+        padding: 24px;
     }
     .modal-card__details {
-        padding: 30px;
-        overflow-y: visible;
+        padding: 24px;
     }
 }
 
@@ -1851,10 +1846,23 @@ button, select {
         max-height: calc(100vh - 16px);
     }
     .modal-card__gallery {
-        padding: 20px;
+        padding: 16px;
     }
     .modal-card__details {
-        padding: 20px;
+        padding: 16px;
+    }
+    .modal-card__main-img {
+        max-height: 160px;
+    }
+    .modal-card__title {
+        font-size: 18px;
+    }
+    .price-box__val {
+        font-size: 18px;
+    }
+    .payment-toggle button {
+        padding: 8px;
+        font-size: 12px;
     }
 }
 

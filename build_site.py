@@ -387,7 +387,7 @@ html_content = """<!DOCTYPE html>
             
             <div class="contact__map-wrapper">
                 <!-- Google Maps Iframe styled clean and minimal -->
-                <iframe src="https://www.google.com/maps/embed?pb=!11m18!1m12!1m3!1d3966.4022631023773!2d106.8043697!3d-6.2105624!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f14fc14fc3f1%3A0xa193cd8e78bc0f82!2sSenayan%2C%20Kec.%20Kby.%20Baru%2C%20Kota%20Jakarta%20Selatan!5e0!3m2!1sid!2sid!4v1700000000000!5m2!1sid!2sid" 
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.1776201526086!2d106.54578222403664!3d-6.988348168436355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e76c7d25d38fe7f%3A0x3ddb854a3cc1973b!2sDealer%20Selamat%20Motor%20Palabuhanratu!5e0!3m2!1sen!2sid!4v1783151669093!5m2!1sen!2sid" 
                         class="contact__map" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" id="js-map-iframe"></iframe>
             </div>
         </div>
@@ -2064,7 +2064,7 @@ button, select {
 
 .modal-card__body {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1.2fr 1fr;
     height: 100%;
     overflow: hidden;
 }
@@ -2477,18 +2477,13 @@ button, select {
         grid-column: 1 / -1;
     }
     .modal-card__body {
-        grid-template-columns: 1fr;
-        overflow-y: auto;
+        grid-template-columns: 1.2fr 1fr;
     }
     .modal-card__gallery {
-        border-right: none;
-        border-bottom: 1px solid var(--border);
-        padding: 30px;
-        overflow-y: visible;
+        padding: 24px;
     }
     .modal-card__details {
-        padding: 30px;
-        overflow-y: visible;
+        padding: 24px;
     }
 }
 
@@ -2584,10 +2579,23 @@ button, select {
         max-height: calc(100vh - 16px);
     }
     .modal-card__gallery {
-        padding: 20px;
+        padding: 16px;
     }
     .modal-card__details {
-        padding: 20px;
+        padding: 16px;
+    }
+    .modal-card__main-img {
+        max-height: 160px;
+    }
+    .modal-card__title {
+        font-size: 18px;
+    }
+    .price-box__val {
+        font-size: 18px;
+    }
+    .payment-toggle button {
+        padding: 8px;
+        font-size: 12px;
     }
 }
 
