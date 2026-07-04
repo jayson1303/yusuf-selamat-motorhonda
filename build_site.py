@@ -509,6 +509,7 @@ html_content = """<!DOCTYPE html>
                             <!-- Thumbnail items will be dynamically generated -->
                         </div>
                     </div>
+                </div>
                 
                 <!-- Details/Configurator Column -->
                 <div class="modal-card__details">
